@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com_taboca_plugins_echo"
+  version="0.0.1"
+  xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <name>TabocaEcho</name>
+
+  <js-module name="TabocaEcho" src="www/TabocaEcho.js">
+
+    <clobbers target="cordova.plugins.TabocaEcho" />
+
+  </js-module>
+
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="TabocaEcho">
+        <param name="android-package" value="com_taboca_plugins_echo.TabocaEcho" />
+      </feature>
+    </config-file>
+    <config-file parent="/*" target="AndroidManifest.xml">
+    </config-file>
+    <source-file src="src/android/TabocaEcho.java" target-dir="src/com_taboca_plugins_echo/TabocaEcho" />
+  </platform>
+</plugin>
