@@ -40,4 +40,9 @@ Notice that this project has a GENERATED_com_taboca_plugins_echo directory which
 
 You can also switch branches to check how the EXAMPLE_ source evolves: 
 
-* interaction_1 branch shows a Toast display element when the JS call is made
+* interaction_1 branch shows a Toast display element when the JS call is made. This change uses the Toast element as shown here http://moduscreate.com/plugin-authoring-cordova-6-ios-android/ 
+
+## References
+
+* http://moduscreate.com/plugin-authoring-cordova-6-ios-android/ 
+
