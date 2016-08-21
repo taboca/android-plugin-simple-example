@@ -35,3 +35,9 @@ Notice that this project has a GENERATED_com_taboca_plugins_echo directory which
 ## Making an app to test your plugin 
 
 * Check the 10_make_cordova_app.sh 
+
+## Learn with my examples
+
+You can also switch branches to check how the EXAMPLE_ source evolves: 
+
+* interaction_1 branch shows a Toast display element when the JS call is made
