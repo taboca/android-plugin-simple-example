@@ -22,9 +22,14 @@ public class TabocaEcho extends CordovaPlugin {
         return false;
     }
 
-    private void coolMethod(String message, CallbackContext callbackContext) {
+    private void coolMethod(String message, final CallbackContext callbackContext) {
         if (message != null && message.length() > 0) {
-            callbackContext.success(message);
+
+            cordova.getActivity().runOnUiThread(new Runnable() {
+                public void run() {
+                  callbackContext.success(message);
+                }
+            });
         } else {
             callbackContext.error("Expected one non-empty string argument.");
         }
